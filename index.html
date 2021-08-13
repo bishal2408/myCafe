@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MyCafe</title>
+</head>
+
+<body>
+    <!-- custom navbar -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Menu">Menu</a>
+            <a href="#Where">Where</a>
+        </div>
+    </div>
+    <!-- image and text below navbar -->
+    <div class="header">
+        <img src="image/cafe.jpg" alt="Cafe Image">
+        <div class="time-open">
+            <p class="img-text">Open form 6am to 5pm</p>
+        </div>
+        <div class="cafe-name">
+            <p class="cafe-title">the cafe</p>
+        </div>
+    </div>
+    <!-- About, Menu, and location -->
+    <div class="container">
+        <!-- About page -->
+        <div class="about" id="About">
+            <span class="title-text">ABOUT THE CAFE</span>
+            <p class="mt">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p> <br>
+            <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+                sandwiches, as well as a selection of sides and salads and other good stuff.
+            </p> <br>
+
+            <div class="owner-msg">
+                <div class="vl"></div>
+                <div class="msg-content">
+                    <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the
+                        new sweet.
+                    </p>
+                    <p style="font-style: normal;">Chef, Coffeeist and Owner: Liam Brown</p>
+                </div>
+            </div>
+            <img class="mt" src="image/about-img.jpg" alt="About Image">
+            <p class="mt-small">Opening hours: everyday from 6am to 5pm.</p>
+            <p class="mt-small">Address: 15 Adr street, 5015, NY</p>
+        </div>
+        <!-- Menu page -->
+        <div class="menu" id="Menu">
+            <span class="title-text">THE MENU</span>
+            <div class="menu-title" id="Mtitle">
+                <a href="javascript:void(0)" onclick="show('eat', 'drink')" class="food active">EAT</a>
+                <a href="javascript:void(0)" onclick="show('drink', 'eat')" class="food ">Drink</a>
+            </div>
+            <!-- eat -->
+            <div id="eat">
+                <p class="food-name">Bread Basket</p>
+                <p class="food-desc">Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+                <p class="food-name">Honey Almond Granola with Fruits</p>
+                <p class="food-desc">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+                <p class="food-name">Belgian Waffle</p>
+                <p class="food-desc">Vanilla flavored batter with malted flour 7.50</p>
+
+                <p class="food-name">Scrambled eggs</p>
+                <p class="food-desc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+                <p class="food-name">Blueberry Pancakes</p>
+                <p class="food-desc">With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <!-- drink -->
+            <div id="drink" style="display: none;">
+                <p class="drink-name">Coffee</p>
+                <p class="drink-desc">Regular coffee 2.50</p>
+
+                <p class="drink-name">Chocolato</p>
+                <p class="drink-desc">Chocolate espresso with milk 4.50</p>
+
+                <p class="drink-name">Corretto</p>
+                <p class="drink-desc">Whiskey and coffee 5.00</p>
+
+                <p class="drink-name">Iced tea</p>
+                <p class="drink-desc">Hot tea, except not hot 3.00</p>
+
+                <p class="drink-name">Soda</p>
+                <p class="drink-desc">Coke, Sprite, Fanta, etc. 2.50</p>
+            </div>
+            <img src="image/menu.jpg" alt="Cup of coffee" class="mt-small">
+        </div>
+        <!-- Where to find -->
+        <div class="where mt" id="Where">
+            <span class="title-text">WHERE TO FIND US</span>
+            <p class="mt">Find us at some address at some place.</p>
+            <img src="image/where.jpg" alt="Where to find us">
+            <p>
+                <span class="title-text">FYI!</span> We offer full-service catering for any event, large or small. We
+                understand your needs and we will
+                cater the food to satisfy the biggerst criteria of them all, both look and taste.
+            </p>
+            <p class="mt-small"> <span>Reserve</span> a table, ask for today's special or just send us a message:</p>
+
+            <form action="javascript:void(0)">
+                <p><input type="text" name="Name" placeholder="Name" required></p>
+                <p><input type="number" name="People" placeholder="How many People" required></p>
+                <p><input type="datetime-local" name="date" placeholder="Date and time" required value="2020-11-16T20:00"></p>
+
+                <p><button type="submit" class="btn">Send Message</button></p>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <p>Powered by <a href="#">myCafe.com</a></p>
+        <a href="#" class="fa fa-instagram icon"></a>
+        <a href="#" class="fa fa-facebook-official icon"></a>
+        <a href="#" class="fa fa-twitter icon"></a>
+        <a href="#" class="fa fa-reddit icon"></a>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
